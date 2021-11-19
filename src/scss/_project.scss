@@ -1,0 +1,49 @@
+.q-project {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 36px;
+    
+    li {
+        max-width: 650px;
+
+        h4 {
+            margin-bottom: 48px;
+        }
+
+        h3 {
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin-bottom: 75px;
+        }
+        
+        img {
+            max-width: 400px;
+        }
+    }
+}
+
+.q-project__anim {
+    h4, h3, p {
+        opacity: 0;
+
+        &.visible {
+            animation: ProjectSlideIn 0.3s ease-in forwards;
+        }
+    }
+}
+
+@keyframes ProjectSlideIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

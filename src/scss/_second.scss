@@ -1,0 +1,35 @@
+.q-second {
+    background: linear-gradient(to right bottom, #1b262c, #1a2d39, #173546, #143c54, #114362, #134a6d, #165279, #195985, #206391, #266d9e, #2c77ab, #3282b8);
+    color:$light;
+    padding-top: 20px;
+    padding-bottom: 32px;
+
+    h2 {
+        font-size: 40px;
+        line-height: 110%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 30px;
+        line-height: 110%;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-style: italic;
+        line-height: 110%;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 125%;
+    }
+
+    img {
+        max-width: 1400px;
+        margin: auto;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/styles.scss" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.example.com">
+    <!-- Robots -->
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Device -->
+    <!-- <meta name="viwport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=5">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Title -->
+    <title>Portfolio Charles Lapierre</title>
+    <!-- Description -->
+    <meta name="description" content="Home description.">
+    <!-- Social -->
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quick Parcel Project — Home">
+    <meta name="twitter:description" content="Home description.">
+    <meta name="twitter:image" content="#">
+    <!-- Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.example.com">
+    <meta property="og:title" content="Quick Parcel Project — Home">
+    <meta property="og:description" content="Home description.">
+    <meta property="og:image" content="#">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- Favicon -->
+    <meta name="theme-color" content="#fff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&family=Tenor+Sans&display=swap"
+        rel="stylesheet">
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            const email = document.getElementById("email").value
+            const object = document.getElementById("object").value
+            const text = document.getElementById("message").value
+            const message = `Expéditeur : ${email}\r\n${text}`
+            Email.send({
+                SecureToken: "d99918b8-2dfc-43ed-b5df-bbc022fabccc",
+                To: 'charles.lapierre91@gmail.com',
+                From: email,
+                Subject: object,
+                Body: message,
+            })
+                .then(() => {
+                    document.getElementById("mailreturn").innerHTML = "Le mail a été envoyé avec succès"
+                    document.getElementById("mailreturn").classList.add('q-span--green');
+                })
+                .catch(error => {
+                    document.getElementById("mailreturn").innerHTML = error
+                    document.getElementById("mailreturn").classList.add('q-span--error');
+                })
+        }
+    </script>
+</head>
+
+<body>
+
+    <section class="q-hero">
+        <div class="q-hero__nav">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="btssio.html">BTS SIO</a>
+                </li>
+                <li>
+                    <a href="projets.html">Projets</a>
+                </li>
+                <li>
+                    <a href="certifs.html">Certifications</a>
+                </li>
+                <li>
+                    <a href="stages.html">Stages</a>
+                </li>
+                <li>
+                    <a href="veille.html">Veille</a>
+                </li>
+                <li>
+                    <a href="contact.html"><span class="q-span--green">Contact</span></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="q-contact">
+            <h1>Formulaire de contact</h1>
+            <form>
+                <ul>
+                    <li>
+                        <p>Email :</p>
+                        <input class="q-contact__field" id="email" type="email" name="email">
+                    </li>
+                    <li>
+                        <p>Objet :</p>
+                        <input class="q-contact__field" id="object" type="text" name="object">
+                    </li>
+                </ul>
+                <p class="q-contact__message">Message :</p>
+                <textarea id="message" name="message"></textarea>
+                <input class="q-contact__btn" type="button" value="Envoyer" onclick="sendEmail()">
+            </form>
+            <p class="q-contact__status" id="mailreturn"></p>
+        </div>
+    </section>
+
+    <footer class="q-footer">
+        <ul class="q-footer__ctas">
+            <li>
+                <a href="https://www.linkedin.com/in/charles-lapierre91">
+                    <img src="./assets/img/linkedin.svg" alt="linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="https://github.com/HowWhat42">
+                    <img src="./assets/img/github.svg" alt="github">
+                </a>
+            </li>
+        </ul>
+        <p class="q-footer__text">© Charles Lapierre | Tous droits réservés</p>
+    </footer>
+
+    <script src="src/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.q-footer {
+    background: $dark;
+    padding: 11px 0;
+}
+
+.q-footer__ctas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    margin: auto;
+    color: $green;
+    margin-bottom: 20px;
+
+    li {
+        padding: 0 10px;
+        flex: 1 0;
+    }
+
+    img {
+        width: 32px;
+        margin: auto;
+        filter: invert(72%) sepia(66%) saturate(357%) hue-rotate(105deg) brightness(87%) contrast(88%);
+
+        &:hover {
+            filter: invert(38%) sepia(10%) saturate(2695%) hue-rotate(110deg) brightness(106%) contrast(86%);
+        }
+    }
+}
+
+.q-footer__text {
+    max-width: 300px;
+    margin: auto;
+    color: $light;
+    line-height: 125%;
+}

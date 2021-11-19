@@ -1,0 +1,19 @@
+$light: #E6F4F1;
+$dark: #1B262C;
+$green:#4ECCA3;
+
+body {
+    background: $light;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.q-span--green {
+    color:$green;
+}
+
+a {
+    &:hover {
+        color: darken($green, 15);
+    }
+}

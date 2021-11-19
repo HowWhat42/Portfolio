@@ -1,0 +1,18 @@
+.q-certif {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        padding: 0 16px;
+
+        img {
+            margin-bottom: 24px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+    }
+}

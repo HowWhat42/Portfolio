@@ -1,0 +1,45 @@
+.q-options {
+    h3 {
+        padding-bottom: 32px;
+    }
+}
+
+.q-options__opt {
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 48px;
+
+    div {
+        max-width: 600px;
+    }
+}
+
+.q-options__text {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.q-options__anim {
+    h3, p {
+        opacity: 0;
+
+        &.visible {
+            animation: OptsSlideIn 0.3s ease-in forwards;
+        }
+    }
+}
+
+@keyframes OptsSlideIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

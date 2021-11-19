@@ -1,0 +1,40 @@
+.q-skills {
+    h3 {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+}
+
+.q-skills__logo {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    opacity: 0;
+
+    &.visible {
+        animation: SkillsSlideIn 0.3s ease-in forwards;
+    }
+
+    &.small {
+        max-width: 500px;
+    }
+    
+    img {
+        width: 150px;
+    }
+}
+
+@keyframes SkillsSlideIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
