@@ -9,6 +9,11 @@
 
         img {
             margin-bottom: 24px;
+            transition: transform ease-in-out 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.3);
         }
 
         p {
