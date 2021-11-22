@@ -3,6 +3,7 @@
 import Skills from "./js/skills";
 import Options from "./js/opts";
 import Project from "./js/project";
+import Stages from "./js/stages";
 
 var options = {
     rootMargin: '0px',
@@ -23,3 +24,4 @@ let observer = new IntersectionObserver(callback, options);
 const skills = new Skills(observer);
 const opts = new Options(observer);
 const project = new Project(observer);
+const stages = new Stages(observer);

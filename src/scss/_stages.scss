@@ -1,0 +1,56 @@
+.q-stages__logo {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+    opacity: 0;
+
+    &.visible {
+        animation: StagesSlideIn 0.3s ease-in forwards;
+    }
+
+    &.small {
+        max-width: 500px;
+    }
+    
+    img {
+        width: 150px;
+    }
+}
+
+.q-stages__content {
+    max-width: 1400px;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 48px;
+    text-align: left;
+
+    div {
+        max-width: 600px;
+    }
+}
+
+.q-stages__anim {
+    h4, p {
+        opacity: 0;
+
+        &.visible {
+            animation: StagesSlideIn 0.3s ease-in forwards;
+        }
+    }
+}
+
+@keyframes StagesSlideIn {
+    0% {
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
