@@ -11,6 +11,9 @@ document.getElementById("sendEmail").addEventListener('click', function sendEmai
                 Body: message,
             })
                 .then(() => {
+                    document.getElementById("email").innerHTML = ""
+                    document.getElementById("object").innerHTML = ""
+                    document.getElementById("message").innerHTML = ""
                     document.getElementById("mailreturn").innerHTML = "Le mail a été envoyé avec succès"
                     document.getElementById("mailreturn").classList.add('q-span--green');
                 })
