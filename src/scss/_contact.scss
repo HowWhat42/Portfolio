@@ -76,8 +76,9 @@
 @media (max-width: 750px) {
     .q-hero {
         padding-bottom: 0;
-        height: 115%;
+        height: auto;
         .q-contact {
+            padding-bottom: 20px;
             h1 {
                 font-size: 36px;
             }
@@ -100,7 +101,7 @@
     }
 
     .q-contact__btn {
-        margin-bottom: 50px;
+        margin-bottom: 0;
     }
 
     .q-contact__field {
