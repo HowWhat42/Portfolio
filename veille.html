@@ -37,7 +37,8 @@
 <body>
 
     <section class="q-hero">
-        <div class="q-hero__nav">
+        <div id="q-navbar" class="q-hero__nav">
+            <span id="openNav" class="q-hero__bars"><img src="./assets/img/bars.svg" alt="bars"></span>
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
@@ -54,7 +55,7 @@
                 <li>
                     <a href="stages.html">Stages</a>
                 </li>
-                <li>
+                <li class="q-hero__selected">
                     <a href="veille.html"><span class="q-span--green">Veille</span></a>
                 </li>
                 <li>
@@ -115,9 +116,7 @@
         </ul>
         <p class="q-footer__text">© Charles Lapierre | Tous droits réservés</p>
     </footer>
-
-    <script src="src/index.js"></script>
-
 </body>
+<script type="text/javascript" src="./src/js/navbar.js"></script>
 
 </html>

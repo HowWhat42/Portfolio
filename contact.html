@@ -34,35 +34,13 @@
         rel="stylesheet">
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            const email = document.getElementById("email").value
-            const object = document.getElementById("object").value
-            const text = document.getElementById("message").value
-            const message = `Expéditeur : ${email}\r\n${text}`
-            Email.send({
-                SecureToken: "d99918b8-2dfc-43ed-b5df-bbc022fabccc",
-                To: 'charles.lapierre91@gmail.com',
-                From: email,
-                Subject: object,
-                Body: message,
-            })
-                .then(() => {
-                    document.getElementById("mailreturn").innerHTML = "Le mail a été envoyé avec succès"
-                    document.getElementById("mailreturn").classList.add('q-span--green');
-                })
-                .catch(error => {
-                    document.getElementById("mailreturn").innerHTML = error
-                    document.getElementById("mailreturn").classList.add('q-span--error');
-                })
-        }
-    </script>
 </head>
 
 <body>
 
     <section class="q-hero">
-        <div class="q-hero__nav">
+        <div id="q-navbar" class="q-hero__nav">
+            <span id="openNav" class="q-hero__bars"><img src="./assets/img/bars.svg" alt="bars"></span>
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
@@ -82,7 +60,7 @@
                 <li>
                     <a href="veille.html">Veille</a>
                 </li>
-                <li>
+                <li class="q-hero__selected">
                     <a href="contact.html"><span class="q-span--green">Contact</span></a>
                 </li>
             </ul>
@@ -103,7 +81,7 @@
                 </ul>
                 <p class="q-contact__message">Message :</p>
                 <textarea id="message" name="message"></textarea>
-                <input class="q-contact__btn" type="button" value="Envoyer" onclick="sendEmail()">
+                <input id="sendEmail" class="q-contact__btn" type="button" value="Envoyer">
             </form>
             <p class="q-contact__status" id="mailreturn"></p>
         </div>
@@ -127,9 +105,7 @@
         </ul>
         <p class="q-footer__text">© Charles Lapierre | Tous droits réservés</p>
     </footer>
-
-    <script src="src/index.js"></script>
-
 </body>
+<script type="text/javascript" src="./src/js/contact.js"></script>
 
 </html>

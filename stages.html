@@ -37,7 +37,8 @@
 <body>
 
     <section class="q-hero">
-        <div class="q-hero__nav">
+        <div id="q-navbar" class="q-hero__nav">
+            <span id="openNav" class="q-hero__bars"><img src="./assets/img/bars.svg" alt="bars"></span>
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
@@ -51,7 +52,7 @@
                 <li>
                     <a href="certifs.html">Certifications</a>
                 </li>
-                <li>
+                <li class="q-hero__selected">
                     <a href="stages.html"><span class="q-span--green">Stages</span></a>
                 </li>
                 <li>
@@ -171,5 +172,6 @@
     <script src="src/index.js"></script>
 
 </body>
+<script type="text/javascript" src="./src/js/navbar.js"></script>
 
 </html>

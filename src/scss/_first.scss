@@ -38,9 +38,42 @@
 .q-first__illus {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px;
 
     img {
         max-width: 650px;
+        margin-bottom: 48px;
+    }
+}
+
+@media (max-width: 750px) {
+    .q-first {
+        padding: 20px 12px 32px 12px;
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .q-first__illus {
+        display: block;
+        img {
+            margin-bottom: 20px;
+        }
     }
 }

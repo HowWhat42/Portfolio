@@ -1,15 +1,8 @@
-.q-options {
-    h3 {
-        padding-bottom: 32px;
-    }
-}
-
 .q-options__opt {
     max-width: 1400px;
     margin: auto;
     justify-content: space-between;
     display: flex;
-    margin-bottom: 48px;
 
     div {
         max-width: 600px;
@@ -24,10 +17,24 @@
 
 .q-options__anim {
     h3, p {
+        padding-bottom: 32px;
         opacity: 0;
 
         &.visible {
             animation: OptsSlideIn 0.3s ease-in forwards;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .q-options__opt {
+        text-align: center;
+        display: block;
+    }
+    
+    .q-options__anim {
+        h3, p {
+            padding-bottom: 20px;
         }
     }
 }

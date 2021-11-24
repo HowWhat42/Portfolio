@@ -33,7 +33,8 @@
     }
 
     textarea {
-        width: 800px;
+        max-width: 800px;
+        width: 100%;
         height: 150px;
         font-size: 16px;
         margin-bottom: 16px;
@@ -41,7 +42,8 @@
 }
 
 .q-contact__field {
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     height: 40px;
 }
 
@@ -69,6 +71,42 @@
 
 .q-span--error {
     color: #CC4E4E;
+}
+
+@media (max-width: 750px) {
+    .q-hero {
+        padding-bottom: 0;
+        height: 115%;
+        .q-contact {
+            h1 {
+                font-size: 36px;
+            }
+
+            li {
+                display: block;
+                text-align: center;
+
+                p {
+                    padding-bottom: 10px;
+                }
+            }
+
+            textarea {
+                width: 90%;
+                margin: auto;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .q-contact__btn {
+        margin-bottom: 50px;
+    }
+
+    .q-contact__field {
+        margin: auto;
+        width: 90%;
+    }
 }
 
 @keyframes HeroSlideIn {

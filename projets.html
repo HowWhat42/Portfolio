@@ -37,7 +37,8 @@
 <body>
 
     <section class="q-hero">
-        <div class="q-hero__nav">
+        <div id="q-navbar" class="q-hero__nav">
+            <span id="openNav" class="q-hero__bars"><img src="./assets/img/bars.svg" alt="bars"></span>
             <ul>
                 <li>
                     <a href="index.html">Accueil</a>
@@ -45,7 +46,7 @@
                 <li>
                     <a href="btssio.html">BTS SIO</a>
                 </li>
-                <li>
+                <li class="q-hero__selected">
                     <a href="projets.html"><span class="q-span--green">Projets</span></a>
                 </li>
                 <li>
@@ -144,5 +145,6 @@
     <script src="src/index.js"></script>
 
 </body>
+<script type="text/javascript" src="./src/js/navbar.js"></script>
 
 </html>

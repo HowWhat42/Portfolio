@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
     opacity: 0;
 
     &.visible {
@@ -24,6 +24,23 @@
     
     img {
         width: 150px;
+    }
+}
+
+@media (max-width: 750px) {
+    .q-skills {
+        h3 {
+            padding-bottom: 16px;
+        }
+    }
+
+    .q-skills__logo {
+        justify-content: space-around;
+        padding-bottom: 16px;
+        img {
+            max-width: 90%;
+            width: 95px;
+        }
     }
 }
 

@@ -18,7 +18,6 @@ function callback(entries) {
     })
 }
 
-
 let observer = new IntersectionObserver(callback, options);
 
 const skills = new Skills(observer);

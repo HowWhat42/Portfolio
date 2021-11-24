@@ -4,15 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 56px;
+    padding-bottom: 56px;
     opacity: 0;
 
     &.visible {
         animation: StagesSlideIn 0.3s ease-in forwards;
-    }
-
-    &.small {
-        max-width: 500px;
     }
     
     img {
@@ -27,18 +23,37 @@
     display: flex;
     margin-bottom: 48px;
     text-align: left;
-
-    div {
-        max-width: 600px;
-    }
 }
 
 .q-stages__anim {
+    max-width: 600px;
     h4, p {
         opacity: 0;
 
         &.visible {
             animation: StagesSlideIn 0.3s ease-in forwards;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .q-stages__content {
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+
+        .q-stages__anim {
+            margin: auto;
+        }
+    }
+
+    .q-stages__logo {
+        justify-content: space-around;
+        padding-bottom: 16px;
+
+        img {
+            max-width: 90%;
+            width: 95px;
         }
     }
 }

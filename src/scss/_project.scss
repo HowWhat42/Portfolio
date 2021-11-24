@@ -36,6 +36,22 @@
     }
 }
 
+@media (max-width: 750px) {
+    .q-project {
+        display: block;
+        text-align: center;
+
+        li {
+            h4 {
+                margin-bottom: 32px;
+            }
+            p {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
 @keyframes ProjectSlideIn {
     0% {
         transform: translateY(-10%);
