@@ -45,6 +45,21 @@
     }
 }
 
+.q-first__btn {
+    background: $green;
+    color: $light;
+    border-radius: 30px;
+    width: 160px;
+    height: 48px;
+    margin: auto;
+
+    margin-top: 16px;
+
+    &:hover {
+        background: darken($green, 15);
+    }
+}
+
 @media (max-width: 750px) {
     .q-first {
         padding: 20px 12px 32px 12px;
