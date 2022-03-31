@@ -1,33 +1,48 @@
+.q-stages {
+    padding: 0 6rem;
+
+    h3,
+    h4,
+    h5 {
+        text-align: center;
+    }
+}
+
 .q-stages__logo {
-    max-width: 1200px;
-    margin: auto;
+    padding: 1rem 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 56px;
     opacity: 0;
 
     &.visible {
         animation: StagesSlideIn 0.3s ease-in forwards;
     }
-    
+
     img {
         width: 150px;
     }
 }
 
 .q-stages__content {
-    max-width: 1400px;
-    margin: auto;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
-    margin-bottom: 48px;
-    text-align: left;
+
+    h4,
+    p {
+        text-align: left;
+    }
 }
 
 .q-stages__anim {
     max-width: 600px;
-    h4, p {
+    margin: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    h4,
+    p {
         opacity: 0;
 
         &.visible {

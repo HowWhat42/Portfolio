@@ -1,10 +1,11 @@
 .q-project {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 36px;
-    
+    margin: 2rem 6rem;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
     li {
         max-width: 650px;
 
@@ -19,7 +20,7 @@
         p {
             margin-bottom: 75px;
         }
-        
+
         img {
             max-width: 400px;
         }
@@ -27,7 +28,10 @@
 }
 
 .q-project__anim {
-    h4, h3, p {
+
+    h4,
+    h3,
+    p {
         opacity: 0;
 
         &.visible {
@@ -45,6 +49,7 @@
             h4 {
                 margin-bottom: 32px;
             }
+
             p {
                 margin-bottom: 20px;
             }

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "parcel index.html",
     "start-multiple-entries": "parcel index.html centered.html what.html ",
-    "build": "parcel build index.html btssio.html certifs.html stages.html projets.html veille.html contact.html"
+    "build": "parcel build index.html btssio.html certifs.html stages.html projets.html veille.html"
   },
   "dependencies": {
     "assets": "^3.0.1",

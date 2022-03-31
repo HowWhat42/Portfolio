@@ -1,6 +1,8 @@
+.q-options {
+    padding: 0 4rem;
+}
+
 .q-options__opt {
-    max-width: 1400px;
-    margin: auto;
     justify-content: space-between;
     display: flex;
 
@@ -16,7 +18,9 @@
 }
 
 .q-options__anim {
-    h3, p {
+
+    h3,
+    p {
         padding-bottom: 32px;
         opacity: 0;
 
@@ -31,9 +35,11 @@
         text-align: center;
         display: block;
     }
-    
+
     .q-options__anim {
-        h3, p {
+
+        h3,
+        p {
             padding-bottom: 20px;
         }
     }

@@ -1,6 +1,4 @@
 .q-certif {
-    max-width: 1400px;
-    margin: auto;
     display: flex;
     justify-content: space-between;
 
@@ -13,7 +11,7 @@
         }
 
         img:hover {
-            transform: scale(1.3);
+            transform: scale(1.2);
         }
 
         p {

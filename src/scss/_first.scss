@@ -1,14 +1,11 @@
 .q-first {
-    max-width: 1400px;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 32px;
-    padding-top: 20px;
+    padding: 2rem 6rem;
 
     h2 {
         font-size: 40px;
         line-height: 110%;
         margin-bottom: 32px;
+        text-align: center;
     }
 
     h3 {
@@ -32,6 +29,7 @@
     p {
         font-size: 20px;
         line-height: 125%;
+        text-align: center;
     }
 }
 
@@ -62,7 +60,7 @@
 
 @media (max-width: 750px) {
     .q-first {
-        padding: 20px 12px 32px 12px;
+        padding: 2rem 4rem;
 
         h2 {
             font-size: 36px;
@@ -87,6 +85,7 @@
 
     .q-first__illus {
         display: block;
+
         img {
             margin-bottom: 20px;
         }
